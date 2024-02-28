@@ -26,8 +26,8 @@ body {
 
 .button:hover {
     display: inline-block;
-    color: rgb(163, 160, 160);
-    background-color: #8d6639;
+    color: rgb(189, 186, 186);
+    background-color: #806445;
 }
 
 
@@ -163,11 +163,6 @@ header {
 
 /** About Us **/
 
-#about {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
 .default {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -280,4 +275,160 @@ header {
     margin-bottom: 70px;
     font-size: 15px;
     color: #cccccc8f;
+}
+
+
+/** Projects **/
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects-filter {
+    border: 1px solid #999;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects-filter ul, .section-projects-filter li {
+    list-style: none;
+}
+
+.section-projects-filter li {
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-right: 1px solid #cccccc8f;
+    color: #555;
+
+}
+
+.section-projects-filter li:last-child {
+    border-right: 0px solid #cccccc8f;
+}
+
+.section-projects-filter li:hover, .section-projects-filter .active {
+    border-bottom: 3px solid #B28756;
+}
+
+.section-projects-photos {
+    width: 100vw;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.section-projects-photo {
+    width: 600px;
+}
+
+.section-projects-photoarea {
+    margin: 10px;
+    width: 580px;
+    height: 300px;
+}
+
+.section-projects-photoarea img {
+    width: inherit;
+    height: inherit;
+    box-shadow: 0px 1px 3px #333;
+}
+
+.section-projects-photoinfo {
+    position: absolute;
+    background-color: #00000050;
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section-projects-photoinfo h5 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-projects-photoarea:hover .section-projects-photoinfo {
+    display: flex;
+}
+
+.section-projects a {
+    margin-top: 20px;
+}
+
+
+/** Our Team **/
+
+.bg-team {
+    background-image: url(../images/complementos/foto9.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 970px;
+    margin: auto;
+}
+
+.section-team-area {
+    background-color: #00000095;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+#team .slide {
+    width: 300px;
+    height: 100%;
+    min-height: 400px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+}
+
+#team .slide-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+#team .sliders-pointers {
+    margin-top: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#team .pointer.active {
+    background-color: #B28756;
 }
