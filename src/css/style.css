@@ -168,29 +168,12 @@ header {
     padding-bottom: 50px;
 }
 
-.default.light {
-    background-color: #F7F7F7;
-}
-
-.default.light .section-title,  .default.light .section-body {
-    color: black;
-}
-
-.default.light .section-desc {
-    color: rgba(119, 114, 114, 0.651);
-}
-
-.default.dark {
-    background-color: #000000;
-}
-
-.default.dark .section-title, .default.dark .section-body {
-    color: rgb(255, 255, 255);
-}
-
-.default.dark .section-desc {
-    color: rgba(255, 255, 255, 0.548);
-}
+.default.light {background-color: #F7F7F7;}
+.default.light .section-title,  .default.light .section-body {color: black;}
+.default.light .section-desc {color: rgba(119, 114, 114, 0.651);}
+.default.dark {background-color: #000000;}
+.default.dark .section-title, .default.dark .section-body {color: rgb(255, 255, 255);}
+.default.dark .section-desc {color: rgba(255, 255, 255, 0.548);}
 
 .default .section-title, .default .section-desc {
     text-align: center;
@@ -305,7 +288,7 @@ header {
     font-size: 14px;
     border-right: 1px solid #cccccc8f;
     color: #555;
-
+    cursor: pointer;
 }
 
 .section-projects-filter li:last-child {
@@ -408,7 +391,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     flex-direction: column;
 }
 
@@ -432,3 +415,41 @@ header {
 #team .pointer.active {
     background-color: #B28756;
 }
+
+.section-team-avatar {
+    width: 200px;
+    height: auto;
+    margin: 30px;
+}
+
+.section-team-name {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-team-role {
+    font-weight: 500;
+    padding-top: 6px;
+    font-size: 14px;
+}
+
+.section-team-social {
+    margin-top: 20px;
+}
+
+.section-team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+a.twitter {background-color: #19A1F8;}
+a.linkedin {background-color: #0A66C2;}
+a.facebook {background-color: #0866FF;}
+a.pinterest {background-color: #E60023;}
+a.google {background-color: #DD4B3B;}
