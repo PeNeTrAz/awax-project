@@ -14,12 +14,12 @@
             <div class="logo">
                 <a href=""><img class="logoimg" src="images/complementos/logo.png" alt=""></a>
             </div>
-            <div class="menu">
+            <div id="menu">
                 <nav>
                     <ul>
-                        <li class="active"><a href="">Home</a></li>
-                        <li><a href="">Sobre Nós</a></li>
-                        <li><a href="">Serviços</a></li>
+                        <li class="active"><a href="#menu">Home</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#services">Serviços</a></li>
                         <li><a href="">Nossos Projetos</a></li>
                         <li><a href="">Nossa Equipe</a></li>
                         <li><a href="">Depoimentos</a></li>
@@ -31,15 +31,15 @@
             </div>
         </div>
     </header>
-    <!--* Main *-->
     <main>
-        <section class="banner">
+        <!--* Slider *-->
+        <section id="banner">
             <div class="sliders">
                 <div class="slide">
-                    <div class="slide_area">
+                    <div class="slide-area">
                         <h1>Design é sobre <br><span>comunicação</span></br></h1>
                         <h2>Contate-Nos: +99 99999-9999</h2>
-                        <a href="">Entre em Contato</a>
+                        <a href="" class="button">Entre em Contato</a>
                     </div>
                 </div>
                 <div class="slide">
@@ -49,7 +49,62 @@
                     ...3
                 </div>
             </div>
+            <div class="sliders-pointers">
+                <div class="pointer active"></div>
+                <div class="pointer"></div>
+                <div class="pointer"></div>
+            </div>
         </section>
+        <!--* About Us *-->
+        <div id="about">
+            <section class="default light">
+                <div class="section-title">Sobre Nós</div>
+                <div class="section-desc">Quem Somos?</div>
+                <div class="section-body">
+                    <div class="section-about">
+                        <div class="section-about-left">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, impedit laudantium corporis optio, iusto perferendis sequi et minus ut, provident rerum amet quisquam blanditiis! Asperiores odio qui perferendis tempore minus. Veniam iure doloremque quas quae earum sapiente, maiores minima nisi saepe accusamus est ratione maxime distinctio nobis et vitae laudantium enim reiciendis adipisci? Ratione incidunt illo debitis accusamus tempora animi?</p>
+                            <br><br>
+                            <a href="" class="button">Saiba Mais</a>
+                        </div>
+                        <div class="section-about-right">
+                            <img src="images/complementos/foto1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--* Services *-->
+        <div id="services">
+            <section class="default dark">
+                <div class="section-title">Serviços</div>
+                <div class="section-desc">Serviços Que Prestamos</div>
+                <div class="section-body">
+                    <div class="section-services">
+                        <div class="section-service">
+                            <img src="images/icones/medalha.png" alt="">
+                            <h4>Design De Alta Qualidade</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="section-service">
+                            <img src="images/icones/estrela.png" alt="">
+                            <h4>Design Moderno</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="section-service">
+                            <img src="images/icones/relogio.png" alt="">
+                            <h4>Updates Regulares</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="section-service">
+                            <img src="images/icones/balao.png" alt="">
+                            <h4>Suporte Rápido e Grátis</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>
